@@ -1,0 +1,5 @@
+{
+  "mongoURI": " mongodb://127.0.0.1:27017/mern",
+  "githubClientId": "7dd03c62dbc89af156c3",
+  "githubSecret": "c780c2d70500372b81ca0713a2f97ff629d0ee1b"
+}
