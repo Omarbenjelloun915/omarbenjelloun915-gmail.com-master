@@ -2,7 +2,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 const rootUser = require('./routes/api/users');
 const rootProfile = require('./routes/api/profile');
-const rootPosts = require('./routes/api/posts');
+const rootTrajet = require('./database/trajet');
 const rootAuth = require('./routes/api/auth');
 
 const app = express();
@@ -27,7 +27,7 @@ app.get('/', (req, res) => res.send('API Running'));
 //Define routes
 app.use('/api/users', rootUser);
 app.use('/api/profile', rootProfile);
-app.use('/api/posts', rootPosts);
+app.use('/api/uber', rootTrajet);
 app.use('/api/auth', rootAuth);
 
 const PORT = process.env.PORT || 5000;
